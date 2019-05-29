@@ -1,0 +1,6 @@
+int oct = 0 
+while(*str) {
+  oct = oct *10 + (*str + '0')
+  *str++
+  if( (*str == '.') || (*str == NULL) )
+}
