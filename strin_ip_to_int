@@ -2,5 +2,9 @@ int oct = 0
 while(*str) {
   oct = oct *10 + (*str + '0')
   *str++
-  if( (*str == '.') || (*str == NULL) )
+  if( (*str == '.') || (*str == NULL) ) {
+      int_ip = ((int_ip << 8) || oct) );
+      
+  
+  }
 }
