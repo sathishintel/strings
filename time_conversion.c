@@ -58,8 +58,10 @@ void timeConversion(char* s) {
 	}
 	if (strcmp("PM",am_pm) == 0) {
     	     printf("calling func with %s , n h %d\n",am_pm, nh);
-	    nh = nh + 12;
-	    func(s,nh);
+	     if ( nh != 12 ) {
+	    	nh = nh + 12;
+	    	func(s,nh);
+	    }
 	}
     printf("convered time  = %s \n",s);
     return;
